@@ -45,7 +45,7 @@ public sealed class SpotService : Spot.SpotBase
 }
 ```
 
-Interested things to notice - that response `WalletsList` already has the collection `Wallets` defined, it couldn't be null, and all methods have `Task<T>` semantic. Again, we haven't defined any C# DTO manually, all records and enums were generated for us by proto compiler (`protoc`), all we've done - defining messages and services using `protobuf3` syntax. That means that we have the single source of the truth.
+Interesting things to notice - that response `WalletsList` already has the collection `Wallets` defined, it couldn't be null, and all methods have `Task<T>` semantic. Again, we haven't defined any C# DTO manually, all records and enums were generated for us by proto compiler (`protoc`), all we've done - defining messages and services using `protobuf3` syntax. That means that we have the single source of the truth.
 
 Let's run this service and try to query it.
 
