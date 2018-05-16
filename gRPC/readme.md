@@ -279,7 +279,7 @@ var serverServiceDefinition = Spot
     .Intercept(new XApiAuthInterceptor());
 ```
 
-> Unfortunately, there is no convenient way to mark some methods with some kind of attributes or operation filters as it could be done using `ASP.NET Core`. At least I'm not aware about these possibilities at the moment. Afaik there is system of plugins those allow to extend `protoc` functionality.
+> Unfortunately, there is no convenient way to mark some methods with some kind of attributes or operation filters as it could be done using `ASP.NET Core`. Afaik there is system of plugins those allow to extend `protoc` functionality but it doesn't seem "easy-to-go" thing.
 
 ## Validation
 
