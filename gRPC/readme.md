@@ -1,5 +1,27 @@
 # `gRPC` vs `ASP.NET Core`
 
+<!-- TOC -->
+
+- [Get started](#get-started)
+- [proto3 language](#proto3-language)
+    - [Inheritance and generics](#inheritance-and-generics)
+    - [Common C# types](#common-c-types)
+    - [oneOf semantic](#oneof-semantic)
+- [Authentication / Headers / Intercepters](#authentication--headers--intercepters)
+- [Validation](#validation)
+- [Performance](#performance)
+    - [Message sizes](#message-sizes)
+    - [Latency](#latency)
+    - [Throughput](#throughput)
+    - [Recovery](#recovery)
+    - [Monitoring](#monitoring)
+- [Toolchain](#toolchain)
+    - [Web UI for testers](#web-ui-for-testers)
+    - [REST over gRPC](#rest-over-grpc)
+- [.NET Core code generation and integration](#net-core-code-generation-and-integration)
+
+<!-- /TOC -->
+
 ## Get started
 
 > In gRPC a client application can directly call methods on a server application on a different machine as if it was a local object, making it easier for you to create distributed applications and services. As in many RPC systems, gRPC is based around the idea of defining a service, specifying the methods that can be called remotely with their parameters and return types. On the server side, the server implements this interface and runs a gRPC server to handle client calls. On the client side, the client has a stub (referred to as just a client in some languages) that provides the same methods as the server.
